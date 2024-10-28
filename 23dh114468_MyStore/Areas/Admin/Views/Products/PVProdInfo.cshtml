@@ -1,0 +1,37 @@
+﻿@model _23dh114468_MyStore.Models.Product
+<head>
+    <style>
+        .img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<div class="container-fluid">
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Tên sản phẩm </dt>
+
+        <dd> @Html.DisplayFor(model => model.ProductName)</dd>
+
+        <dt> Mô tả</dt>
+
+        <dd>@Html.DisplayFor(model => model.ProductDecription)</dd>
+
+        <dt>Đơn giá </dt>
+
+        <dd>@Html.DisplayFor(model => model.ProductPrice)</dd>
+
+        <dt>Hình ảnh</dt>
+
+        <dd>@Html.DisplayFor(model => model.ProductImage)</dd>
+
+        <dt>Danh mục </dt>
+
+        <dd>@Html.DisplayFor(model => model.Category.CategoryName)</dd>
+        <dt style="padding:10px"></dt>
+
+
+    </dl>
+</div>
